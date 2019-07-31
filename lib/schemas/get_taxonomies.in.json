@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "properties": {
+        "context": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "view",
+                "embed",
+                "edit"
+            ]
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "description": "Limit result set to comments assigned a specific type. Requires authorization. Default comment",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

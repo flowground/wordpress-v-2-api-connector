@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "metaid": {
+            "required": true,
+            "type": "string"
+        },
+        "force": {
+            "required": false,
+            "type": "boolean"
+        }
+    }
+}

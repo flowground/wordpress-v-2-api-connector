@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "context": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "view",
+                "embed",
+                "edit"
+            ]
+        }
+    }
+}

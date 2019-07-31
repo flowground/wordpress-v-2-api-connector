@@ -1,0 +1,22 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "revisionid": {
+            "required": true,
+            "type": "string"
+        },
+        "context": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "view",
+                "embed",
+                "edit"
+            ]
+        }
+    }
+}

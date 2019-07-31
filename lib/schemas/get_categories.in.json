@@ -1,0 +1,74 @@
+{
+    "type": "object",
+    "properties": {
+        "context": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "view",
+                "embed",
+                "edit"
+            ]
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "page": {
+                    "description": "Current page of the collection. Default 1",
+                    "type": "integer"
+                },
+                "per_page": {
+                    "description": "Maximum number of items to be returned in result set. Default 10",
+                    "type": "integer"
+                },
+                "search": {
+                    "description": "Limit results to those matching a string.",
+                    "type": "string"
+                },
+                "hide_empty": {
+                    "description": "Whether to hide resources not assigned to any posts.",
+                    "type": "boolean"
+                },
+                "exclude": {
+                    "description": "Ensure result set excludes specific ids.",
+                    "type": "string"
+                },
+                "include": {
+                    "description": "Ensure result set includes specific ids.",
+                    "type": "string"
+                },
+                "order": {
+                    "description": "Order sort attribute ascending or descending. Default desc",
+                    "type": "string",
+                    "enum": [
+                        "desc",
+                        "asc"
+                    ]
+                },
+                "orderby": {
+                    "description": "Sort collection by object attribute. Default date",
+                    "type": "string",
+                    "enum": [
+                        "date",
+                        "id",
+                        "include",
+                        "title",
+                        "slug"
+                    ]
+                },
+                "parent": {
+                    "description": "The id for the parent of the object.",
+                    "type": "integer"
+                },
+                "post": {
+                    "description": "The id for the associated post of the resource.",
+                    "type": "string"
+                },
+                "slug": {
+                    "description": "Limit result set to posts with a specific slug.",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

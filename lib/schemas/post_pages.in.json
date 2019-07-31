@@ -1,0 +1,87 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "date": {
+                    "description": "The date the object was published, in the site's timezone.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "date_gmt": {
+                    "description": "The date the object was published, as GMT.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "password": {
+                    "description": "The A password to protect access to the post.",
+                    "type": "string"
+                },
+                "slug": {
+                    "description": "Limit result set to posts with a specific slug.",
+                    "type": "string"
+                },
+                "status": {
+                    "description": "Limit result set to posts assigned a specific status.Default publish",
+                    "type": "string",
+                    "enum": [
+                        "publish",
+                        "future",
+                        "draft",
+                        "pending",
+                        "private"
+                    ]
+                },
+                "parent": {
+                    "description": "The id for the parent of the object.",
+                    "type": "integer"
+                },
+                "title": {
+                    "description": "The title for the object.",
+                    "type": "string"
+                },
+                "content": {
+                    "description": "The content for the object.",
+                    "type": "string"
+                },
+                "author": {
+                    "description": "Limit result set to posts assigned to specific authors.",
+                    "type": "string"
+                },
+                "excerpt": {
+                    "description": "The excerpt for the object",
+                    "type": "string"
+                },
+                "featured_media": {
+                    "description": "The id of the featured media for the object.",
+                    "type": "string"
+                },
+                "comment_status": {
+                    "description": "Whether or not comments are open on the object",
+                    "type": "string",
+                    "enum": [
+                        "open",
+                        "closed"
+                    ]
+                },
+                "ping_status": {
+                    "description": "Whether or not the object can be pinged.",
+                    "type": "string",
+                    "enum": [
+                        "open",
+                        "closed"
+                    ]
+                },
+                "menu_order": {
+                    "description": "The order of the object in relation to other object of its type.",
+                    "type": "integer"
+                },
+                "template": {
+                    "description": "The theme file to use to display the object.",
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "description": {
+                    "description": "The description for the resource",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "HTML title for the resource.",
+                    "type": "string"
+                },
+                "slug": {
+                    "description": "Limit result set to posts with a specific slug.",
+                    "type": "string"
+                },
+                "parent": {
+                    "description": "The id for the parent of the object.",
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "force": {
+            "required": false,
+            "type": "boolean"
+        },
+        "requestBody": {
+            "type": "object",
+            "properties": {
+                "reassign": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
